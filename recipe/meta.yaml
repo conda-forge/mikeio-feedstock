@@ -1,5 +1,5 @@
 {% set name = "mikeio" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0eda011a42863e998df55ae7b9e324b3c470f2d5ce6f56feb2d2ae082492eff8
+  sha256: e25d09b0cb18c4bdd653c5fcd628ac217c389c80bf1412d3ed107633b26e1165
 
 build:
   skip: true  # [not win or py<36]
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,8 +38,8 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: License.txt
-  summary: "API for the DHI MIKE file types"
-  description: "Read, write and manipulate dfs0, dfs1, dfs2, dfs3, dfsu and mesh files. Read res1d and xns11 files."
+  summary: API for the DHI MIKE file types
+  description: Read, write and manipulate dfs0, dfs1, dfs2, dfs3, dfsu and mesh files. Read res1d and xns11 files.
   dev_url: https://github.com/DHI
 
 extra:
