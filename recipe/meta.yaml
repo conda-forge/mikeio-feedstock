@@ -28,6 +28,7 @@ requirements:
     - shapely
     - xarray
     - matplotlib-base
+    - tqdm
 
 test:
   imports:
