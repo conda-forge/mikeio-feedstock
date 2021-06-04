@@ -29,6 +29,7 @@ requirements:
     - xarray
     - matplotlib-base
     - tqdm
+    - pyproj
 
 test:
   imports:
