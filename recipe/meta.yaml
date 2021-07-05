@@ -20,7 +20,6 @@ requirements:
     - pip
   run:
     - python
-    - pythonnet
     - numpy
     - pandas
     - scipy
@@ -30,6 +29,7 @@ requirements:
     - matplotlib-base
     - tqdm
     - pyproj
+    - mikecore==0.1.2b2
 
 test:
   imports:
