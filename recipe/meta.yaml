@@ -29,7 +29,7 @@ requirements:
     - matplotlib-base
     - tqdm
     - pyproj
-    - mikecore==0.1.2b2
+    - mikecore ==0.1.2b2
 
 test:
   imports:
