@@ -1,13 +1,13 @@
 {% set name = "mikeio" %}
-{% set version = "1.5.1" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a8f765564e40dd5e7fd9ee54bf517919934d0bde04ba6d486714d50a5f26f5c1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 92ef4bf4a70a4641548373f29e0b2a42e8b67e96a164d826c5d51fd27b970172
 
 build:
   skip: true  # [not win or py<36]
